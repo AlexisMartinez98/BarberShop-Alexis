@@ -8,12 +8,14 @@ import ItemDetailContainer from './containers/ItemDetailContainer'
 function App() {
 
   return (
-    <>
+    <BrowserRouter>
       <NavBar/>
-      <ItemListContainer/>
-      <ItemDetailContainer/>
-      <Footer/>
-    </>
+      <Routes>
+        <Route path='/' element={<ItemListContainer/>}/>
+        <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
+        <Route path='/:itemId' element={<ItemDetailContainer/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

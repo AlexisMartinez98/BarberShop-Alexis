@@ -3,7 +3,7 @@ import { Link, useLocation} from 'react-router-dom'
 
 const Item = ({imageSrc, imageAlt, title, price, brand, id, category}) => {
     return (
-        <Link to={`${id}`}>
+        <Link to={`/${id}`}>
             <div className="max-w-xs rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
                 <img className="img-producto w-full" src={imageSrc} alt={imageAlt}/>
                 <div className="px-6 py-4 border-t border-gray-200">

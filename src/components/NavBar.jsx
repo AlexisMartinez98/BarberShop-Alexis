@@ -16,13 +16,13 @@ const NavBar = () => {
                         <Link to="/" className="block text-xl mt-4 lg:inline-block lg:mt-0 font-bold text-white hover:text-red-600 mr-4 active:underline">
                             Inicio
                         </Link>
-                        <Link to="/maquinas" className="block text-xl mt-4 lg:inline-block lg:mt-0 font-bold text-white hover:text-red-600 mr-4 active:underline">
+                        <Link to="/category/maquinas" className="block text-xl mt-4 lg:inline-block lg:mt-0 font-bold text-white hover:text-red-600 mr-4 active:underline">
                             Maquinas
                         </Link>
-                        <Link to="/herramientas" className="block text-xl mt-4 lg:inline-block lg:mt-0 font-bold text-white hover:text-red-600 mr-4 active:underline">
+                        <Link to="/category/herramientas" className="block text-xl mt-4 lg:inline-block lg:mt-0 font-bold text-white hover:text-red-600 mr-4 active:underline">
                             Herramientas
                         </Link>
-                        <Link to="/accesorios" className="block text-xl mt-4 lg:inline-block lg:mt-0 font-bold text-white hover:text-red-600 mr-4 active:underline">
+                        <Link to="/category/accesorios" className="block text-xl mt-4 lg:inline-block lg:mt-0 font-bold text-white hover:text-red-600 mr-4 active:underline">
                             Accesorios
                         </Link>
                     </div>
