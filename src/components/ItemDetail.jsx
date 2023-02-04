@@ -1,9 +1,12 @@
 import React from 'react'
 import Count from './Count'
-import { useLocation, useParams } from 'react-router-dom'
+import {useCartContext} from '../contex/CartContext'
 
 const ItemDetail = ({data}) => {
-
+    const {addItem} = useCartContext()
+    const onAdd = (quantity) => {
+        addItem(data, quantity)
+    }
     return (
         <div className="flex items-center justify-center rounded overflow-hidden shadow-lg mb-5">
             <div className='border-r border-gray-200'>
@@ -25,7 +28,7 @@ const ItemDetail = ({data}) => {
                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 opacity-40">Id: {data.id}</span>
                 </div>
                 <div className='mt-7'>
-                    <Count item={data}/>
+                    <Count item={data} onAdd={onAdd}/>
                 </div>
             </div>
         </div>

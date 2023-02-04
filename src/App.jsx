@@ -4,18 +4,25 @@ import './App.css'
 import ItemListContainer from './containers/ItemListContainer'
 import Footer from './components/Footer'
 import ItemDetailContainer from './containers/ItemDetailContainer'
+import Cart from './components/Cart';
+import CartProvider from './contex/CartContext';
 
 function App() {
-
   return (
-    <BrowserRouter>
-      <NavBar/>
-      <Routes>
-        <Route path='/' element={<ItemListContainer/>}/>
-        <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
-        <Route path='/:itemId' element={<ItemDetailContainer/>}/>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <CartProvider>
+          <NavBar/>
+            <Routes>
+              <Route path='/' element={<ItemListContainer/>}/>
+              <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
+              <Route path='/cart' element={<Cart/>}/>
+              <Route path='/:itemId' element={<ItemDetailContainer/>}/>
+            </Routes>
+          <Footer/>
+        </CartProvider>
+      </BrowserRouter>
+    </>
   )
 }
 

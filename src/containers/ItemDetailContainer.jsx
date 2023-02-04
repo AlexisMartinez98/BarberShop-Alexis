@@ -20,14 +20,14 @@ const ItemDetailContainer = () => {
         const promise = new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve(product)
-            }, 2000)
+            }, 600)
         })
         promise.then((result) => {
             setItem(result)
         })
     },[])
     
-    console.log (item)
+    // console.log (item)
     return (
         <>
             <ItemDetail data= {item}/>

@@ -9,10 +9,10 @@ const ItemListContainer = () => {
     const [products, setProducts] = useState([])
 
     const id = useParams();
-    console.log(id)
+    // console.log(id)
 
     const item = productsData.filter(product => product.category === id.categoryId)
-    console.log(item)
+    // console.log(item)
     
     useEffect (() => {
         if (id && id.categoryId) {
