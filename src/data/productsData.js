@@ -9,8 +9,6 @@ export const productsData = [
         imageAlt: "SuperTaper",
         price: "17187",
         stock: "10",
-        initial: "1",
-        min:"0",
         categoryId:1,
         category:"maquinas"
     },
@@ -23,8 +21,6 @@ export const productsData = [
         imageAlt: "SuperTaperTattoo",
         price: "9480",
         stock: "8",
-        initial: "1",
-        min:"0",
         categoryId:1,
         category:"maquinas"
     },
@@ -37,8 +33,6 @@ export const productsData = [
         imageAlt: "BALDING",
         price: "18090",
         stock: "6",
-        initial: "1",
-        min:"0",
         categoryId:1,
         category:"maquinas"
     },
@@ -51,8 +45,6 @@ export const productsData = [
         imageAlt: "MAGICCLIP",
         price: "19890",
         stock: "4",
-        initial: "1",
-        min:"0",
         categoryId:1,
         category:"maquinas"
     },
@@ -64,8 +56,6 @@ export const productsData = [
         imageSrc: "https://wahlclipper.vteximg.com.br/arquivos/ids/157349-1000-1000/8147-028_hero.png.jpg?v=637672322828430000",
         imageAlt: "LEGEND",
         stock: "2",
-        initial: "1",
-        min:"0",
         categoryId:1,
         category:"maquinas"
     },
@@ -78,8 +68,6 @@ export const productsData = [
         imageAlt: "MENSMETHOD",
         price: "14990",
         stock: "2",
-        initial: "1",
-        min:"0",
         categoryId:1,
         category:"maquinas"
     },
@@ -92,8 +80,6 @@ export const productsData = [
         imageAlt: "SENIOR",
         price: "38990",
         stock: "2",
-        initial: "1",
-        min:"0",
         categoryId:1,
         category:"maquinas"
     },
@@ -106,8 +92,6 @@ export const productsData = [
         imageAlt: "TRIMMER",
         price: "34990",
         stock: "2",
-        initial: "1",
-        min:"0",
         categoryId:1,
         category:"maquinas"
     },
@@ -120,8 +104,6 @@ export const productsData = [
         imageAlt: "FINALE",
         price: "26990",
         stock: "2",
-        initial: "1",
-        min:"0",
         categoryId:1,
         category:"maquinas"
     },
@@ -134,8 +116,6 @@ export const productsData = [
         imageAlt: "cepillOJRL",
         price: "2190",
         stock: "2",
-        initial: "1",
-        min:"0",
         categoryId:2,
         category:"herramientas"
     },
@@ -148,8 +128,6 @@ export const productsData = [
         imageAlt: "cepillOJRLFILAM",
         price: "2250",
         stock: "23",
-        initial: "1",
-        min:"0",
         categoryId:2,
         category:"herramientas"
     },
@@ -162,8 +140,6 @@ export const productsData = [
         imageAlt: "LucyDanCEPILLO",
         price: "2050",
         stock: "5",
-        initial: "1",
-        min:"0",
         categoryId:2,
         category:"herramientas"
     },
@@ -176,8 +152,6 @@ export const productsData = [
         imageAlt: "DelantalBarber",
         price: "5590",
         stock: "5",
-        initial: "1",
-        min:"0",
         categoryId:3,
         category: "accesorios"
     },
@@ -190,8 +164,6 @@ export const productsData = [
         imageAlt: "cuchillaceramica",
         price: "2890",
         stock: "1",
-        initial: "1",
-        min:"0",
         categoryId:3,
         category: "accesorios"
     },
@@ -204,8 +176,6 @@ export const productsData = [
         imageAlt: "portaherramienta",
         price: "6990",
         stock: "4",
-        initial: "1",
-        min:"0",
         categoryId:3,
         category: "accesorios"
     },
@@ -218,8 +188,6 @@ export const productsData = [
         imageAlt: "pulverizadorlucydan",
         price: "1190",
         stock: "4",
-        initial: "1",
-        min:"0",
         categoryId:3,
         category: "accesorios"
     }

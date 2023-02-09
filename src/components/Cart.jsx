@@ -1,6 +1,7 @@
 import React from 'react'
 import {useCartContext} from '../contex/CartContext'
 import cartStyle from '../components/styles/cartStyle.css'
+import {Link} from 'react-router-dom'
 
 const Cart = () => {
     const {cart, clearCart, removeProduct} = useCartContext()
@@ -26,14 +27,16 @@ const Cart = () => {
             <h1 className='text-center font-bold text-2xl m-4'>CARRITO</h1>
             {mapsItems}
             <div className='flex justify-end'>
-                {cart.length === 0 && <h2 className='text-center font-bold text-2xl m-4'>No hay productos en el carrito</h2>}
+                {cart.length === 0 && <h2 className='text-center font-bold text-2xl m-4 text-red-700'>No hay productos en el carrito..!!</h2>}
                 <p className='text-2xl font-bold m-16'>
                     Total: <span className='text-red-600'>${cart.reduce((acc, item) => acc + item.price * item.quantity, 0)}</span>
                 </p>
             </div>
             <div className='flex justify-between'>
                 <button className='hover:text-red-700 text-red-600 font-bold py-1 px-4 w-0.5/6' onClick={clearCart}>Limpiar Carrito</button>
-                <button className='bg-red-600 hover:bg-red-700 text-white font-bold py-1 px-4 rounded w-2/6' onClick={clearCart}>Pagar</button>
+                <Link to={'/form'}>
+                    <button className='bg-red-600 hover:bg-red-700 text-white font-bold py-1 px-4 m-5 rounded w-6/6'>Pagar</button>
+                </Link>
             </div>
             
         </div>

@@ -7,6 +7,7 @@ const ItemDetail = ({data}) => {
     const onAdd = (quantity) => {
         addItem(data, quantity)
     }
+    // console.log('itemdetail', data)
     return (
         <div className="flex items-center justify-center rounded overflow-hidden shadow-lg mb-5">
             <div className='border-r border-gray-200'>
@@ -16,7 +17,7 @@ const ItemDetail = ({data}) => {
             <div className='flex flex-col p-4'>
                 <div className="px-6 py-4">
                     <h1 className="font-bold text-2xl mb-10 text-center">
-                        {data.title}
+                        {data.name}
                     </h1>
                     <h2 className='text-center text-xl font-light p-5 mb-5'>{data.description}</h2>
                     <h3 className="text-gray-700 font-bold text-center text-3xl">

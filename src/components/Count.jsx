@@ -13,7 +13,7 @@ const Count = ({item, onAdd}) => {
             setCount(count - 1)
         }
     }
-
+    
     return (
         <div>
             <div className='flex items-center justify-center'>
