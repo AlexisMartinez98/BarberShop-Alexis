@@ -35,7 +35,9 @@ const Cart = () => {
             <div className='flex justify-between'>
                 <button className='hover:text-red-700 text-red-600 font-bold py-1 px-4 w-0.5/6' onClick={clearCart}>Limpiar Carrito</button>
                 <Link to={'/form'}>
-                    <button className='bg-red-600 hover:bg-red-700 text-white font-bold py-1 px-4 m-5 rounded w-6/6'>Pagar</button>
+                    <button className={`text-white font-bold py-1 px-4 m-5 rounded w-6/6 cursor-not-allowed  ${cart.length <= 0 ? "bg-red-400 ": "bg-red-600 cursor-pointer hover:bg-red-700"}`} 
+                        disabled={cart.length <= 0 ? true : false}
+                    >Pagar</button>
                 </Link>
             </div>
             
